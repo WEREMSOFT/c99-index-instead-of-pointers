@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/werem/Documents/projects/c/index-instead-of-pointers'
+ 
+gcc -c -g -O0 src/main.c -o src/main.o
+ 
+gcc -g -O0 src/main.c -o ./bin/main.bin
+make: Leaving directory '/home/werem/Documents/projects/c/index-instead-of-pointers'
+ 
