@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Apr  2 12:42:34 2022
+# Make data base, printed on Sun Apr  3 13:56:39 2022
 
 # Variables
 
@@ -23,13 +23,16 @@ SRC = $(shell find src -name *.c)
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-475d8921-4c75-43eb-b8b4-18906865dfd1.sock
+GJS_DEBUG_OUTPUT = stderr
 # environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-1736a4a9-68f5-4517-a878-909f42c1349a.sock
+# environment
+ 
 LC_NAME = cs_CZ.UTF-8
 # environment
 LC_NUMERIC = cs_CZ.UTF-8
 # environment
-VSCODE_CWD = /home/werem/Documents/projects/c/index-instead-of-pointers
+VSCODE_CWD = /home/werem
 # environment
 WINDOWPATH = 2
 # environment
@@ -61,7 +64,7 @@ MAIL = /var/spool/mail/werem
 # environment
 XDG_DATA_DIRS = /home/werem/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-OLDPWD = /home/werem/Documents/projects/c
+OLDPWD = /home/werem
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -80,8 +83,6 @@ XAUTHORITY = /run/user/1000/gdm/Xauthority
 LESS_TERMCAP_md = [01;32m
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# environment
-GNOME_TERMINAL_SERVICE = :1.416
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -101,7 +102,6 @@ MFLAGS = -pqrR
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # default
- 
 .SHELLFLAGS := -c
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
@@ -118,7 +118,7 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 17079
+VSCODE_PID = 5648
 # environment
 MOZ_ENABLE_WAYLAND = 1
 # environment
@@ -127,10 +127,12 @@ XDG_SESSION_TYPE = x11
 CUDA_PATH = /opt/cuda
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile (from 'Makefile', line 2)
 FLAGS = -g -O0
 # environment
-SESSION_MANAGER = local/weremcube:@/tmp/.ICE-unix/1227,unix/weremcube:/tmp/.ICE-unix/1227
+SESSION_MANAGER = local/weremcube:@/tmp/.ICE-unix/1216,unix/weremcube:/tmp/.ICE-unix/1216
 # automatic
 *F = $(notdir $*)
 # environment
@@ -141,8 +143,6 @@ CHROME_DESKTOP = code-url-handler.desktop
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
-# environment
-P9K_TTY = old
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # default
@@ -158,9 +158,9 @@ XMODIFIERS = @im=ibus
 # environment
 DOTNET_BUNDLE_EXTRACT_BASE_DIR = /home/werem/.cache/dotnet_bundle_extract
 # environment
-SHLVL = 2
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/e093692c_9ad3_4c1f_a497_ba159b58ffea
+SHLVL = 1
 # environment
 MAKELEVEL := 0
 # default
@@ -168,7 +168,7 @@ MAKE = $(MAKE_COMMAND)
 # environment
 SNAP_COOKIE = p31Xlcw_JhXZDautP2eJdU7LebbAFmpgt13gZeoUq1jmf8cYLnjN
 # environment
-PATH = /home/werem/.local/bin:/usr/local/bin:/usr/bin:/var/lib/snapd/snap/bin:/usr/local/sbin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/home/werem/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/werem/Documents/programs/dotnet
+PATH = /home/werem/.local/bin:/home/werem/.local/bin:/usr/local/bin:/usr/bin:/var/lib/snapd/snap/bin:/usr/local/sbin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/home/werem/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/usr/lib/jvm/default/bin:/home/werem/Documents/programs/dotnet
 # environment
 LESS_TERMCAP_se = [0m
 # default
@@ -188,6 +188,8 @@ LESS_TERMCAP_mb = [01;32m
 # environment
 SNAP = /snap/code/92
 # environment
+INVOCATION_ID = ac53836c65454e5684b890f573339b14
+# environment
 SNAP_REVISION = 92
 # environment
 SNAP_REAL_HOME = /home/werem
@@ -202,7 +204,7 @@ LC_TELEPHONE = cs_CZ.UTF-8
 # environment
 XDG_CURRENT_DESKTOP = GNOME
 # environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LS_COLORS = 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -216,11 +218,13 @@ GNUMAKEFLAGS :=
 # environment
 LOGNAME = werem
 # environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
 SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 1243
+SYSTEMD_EXEC_PID = 1232
 # environment
 EDITOR = /usr/bin/nano
 # environment
@@ -238,7 +242,11 @@ SNAP_DATA = /var/snap/code/92
 # environment
 SNAP_CONTEXT = p31Xlcw_JhXZDautP2eJdU7LebbAFmpgt13gZeoUq1jmf8cYLnjN
 # environment
+MANAGERPID = 1147
+# environment
 LC_MEASUREMENT = cs_CZ.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 5610
 # environment
 _ = /usr/bin/make
 # environment
@@ -246,9 +254,9 @@ LC_PAPER = cs_CZ.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-COLORTERM = truecolor
-# environment
 GDK_PIXBUF_MODULE_FILE = /home/werem/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+JOURNAL_STREAM = 8:33303
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -261,8 +269,6 @@ QT_IM_MODULE = ibus
 ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-c2d9916e-1.66.0-main.sock
-# environment
-TERM = xterm-256color
 # environment
 SNAP_NAME = code
 # environment
@@ -280,13 +286,9 @@ TARGET = ./bin/main.bin
 # environment
 QT_AUTO_SCREEN_SCALE_FACTOR = 1
 # environment
-_P9K_TTY = /dev/pts/0
-# environment
 VSCODE_CLI = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-VTE_VERSION = 6602
 # environment
 SNAP_COMMON = /var/snap/code/common
 # environment
@@ -310,7 +312,7 @@ LC_IDENTIFICATION = cs_CZ.UTF-8
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=149/1024=15%, Rehash=0, Collisions=28/194=14%
+# Load=150/1024=15%, Rehash=0, Collisions=19/190=10%
 
 # Pattern-specific Variable Values
 
@@ -319,14 +321,15 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Directories
 
 # src (device 66309, inode 22810668): 3 files, no impossibilities so far.
-# . (device 66309, inode 22687289): 6 files, no impossibilities.
+# . (device 66309, inode 22687289): 7 files, no impossibilities.
 
-# 9 files, no impossibilities in 2 directories.
+# 10 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
 %.o: %.c
 #  recipe to execute (from 'Makefile', line 11):
+ 
 	$(CC) -c $(FLAGS) $^ -o $@
 
 # 1 implicit rules, 0 (0.0%) terminal.
@@ -357,16 +360,34 @@ clean:
 # Not a target:
 src/main.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-02 12:40:27.433200551
+#  Last modified 2022-04-02 12:59:41.079833435
 #  File has been updated.
 #  Successfully updated.
 
 src/main.o: src/main.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'src/main'
-#  Last modified 2022-04-02 12:40:28.689867177
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := src/main.o
+# automatic
+# * := src/main
+# automatic
+# < := src/main.c
+# automatic
+# + := src/main.c
+# automatic
+# % := 
+# automatic
+# ^ := src/main.c
+# automatic
+# ? := src/main.c
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/15=13%
 #  recipe to execute (from 'Makefile', line 11):
 	$(CC) -c $(FLAGS) $^ -o $@
 
@@ -376,57 +397,31 @@ src/main.o: src/main.c
 #  Modification time never checked.
 #  File has not been updated.
 
-# 'override' directive
-all: .SHELLSTATUS := 0
 all: src/main.o
 #  Command line target.
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
-# automatic
-# @ := all
-# automatic
-# * := 
-# automatic
-# < := src/main.o
-# automatic
-# + := src/main.o
-# automatic
-# % := 
-# automatic
-# ^ := src/main.o
-# automatic
-# ? := src/main.o
-# automatic
-# | := 
 # variable set hash-table stats:
-# Load=9/32=28%, Rehash=0, Collisions=2/19=11%
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
 #  recipe to execute (from 'Makefile', line 8):
 	$(CC) $(FLAGS) $(SRC) -o $(TARGET)
 
-# Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 # files hash-table stats:
-# Load=8/1024=1%, Rehash=0, Collisions=0/25=0%
+# Load=8/1024=1%, Rehash=0, Collisions=0/24=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 153 B / avg = 7 B
-# current buf: size = 8162 B / used = 153 B / count = 20 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 170 B / avg = 8 B
+# current buf: size = 8162 B / used = 170 B / count = 21 / avg = 8 B
 
-# strcache performance: lookups = 33 / hit rate = 39%
+# strcache performance: lookups = 33 / hit rate = 36%
 # hash-table stats:
- 
-# Load=20/8192=0%, Rehash=0, Collisions=0/33=0%
-# Finished Make data base on Sat Apr  2 12:42:34 2022
+# Load=21/8192=0%, Rehash=0, Collisions=0/33=0%
+# Finished Make data base on Sun Apr  3 13:56:39 2022
 
  

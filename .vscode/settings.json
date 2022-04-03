@@ -4,5 +4,12 @@
     "files.associations": {
         "custom_allocator.h": "c",
         "stdint.h": "c"
-    }
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/werem/Documents/projects/c/index-instead-of-pointers/bin",
+            "binaryPath": "/home/werem/Documents/projects/c/index-instead-of-pointers/bin/main.bin",
+            "binaryArgs": []
+        }
+    ]
 }
